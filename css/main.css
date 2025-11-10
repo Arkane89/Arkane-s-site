@@ -1,11 +1,26 @@
+:root {
+    --design-w: 1440;
+    --s: 1;
+}
 body{
     margin: 0px;
     padding: 0px;
     font-family: 'DM Sans';
+    height: 100%;
     
 }
 a{
     text-decoration: none;
+}
+#viewport {
+    width: calc(var(--design-w) * 1px);
+    height: calc(var(--design-h) * 1px);
+    transform-origin: 0 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(var(--s));
+    overflow: hidden;
 }
 
 
@@ -468,4 +483,5 @@ a{
     width: 140px;
     height: 21px;
     margin-top: 15px;
+
 }
